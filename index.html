@@ -8,6 +8,15 @@
     </head>
     <body>
         <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+        <div id="app">
+            <h2>Lista mail</h2>            
+            <ul>
+                <!-- lista che conterrà le e-mail cenerate dall'API -->
+                <li v-for="email in emails">{{email}}</li>
+            </ul>
+        </div>
+
         <script src="./js/app.js"></script>
     </body>
 </html>
