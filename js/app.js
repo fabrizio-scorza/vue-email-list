@@ -4,12 +4,13 @@ createApp({
     data() {
         return{
             emails:[],
+            length: 10,
         }
     },
     methods: {
         //metodo che genera la mail random dall'API
         randomMails() {
-            for (i = 0; i < 10; i++){  
+            for (i = 0; i < this.length; i++){  
                 axios
                 .get('https://flynn.boolean.careers/exercises/api/random/mail')
                 .then((mailApi) =>{

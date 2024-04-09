@@ -11,7 +11,7 @@
 
         <div id="app">
             <h2>Lista mail</h2>            
-            <ul>
+            <ul v-if="emails.length === length">
                 <!-- lista che conterrà le e-mail cenerate dall'API -->
                 <li v-for="email in emails">{{email}}</li>
             </ul>
